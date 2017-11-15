@@ -19,4 +19,4 @@ c. Ethernet and ARP: The Address Resolution Protocol
   14. source: 00:06:25:da:af:73; destination: 00:d0:59:a9:3d:68 (from ethernet-ethereal-trace-1 trace file)
   15. That ARP request (for 192.168.1.117) was not for the machine running Wireshark (1921.168.1.105), meaning an ARP response here would be illogical.
 
-d.
+d. Between 15s and 45s (from https://support.microsoft.com/en-us/help/949589/description-of-address-resolution-protocol-arp-caching-behavior-in-win)
