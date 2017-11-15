@@ -4,7 +4,7 @@ a. Ethernet and ARP: Capturing Ethernet Frames
 3. 0800; IPv4
 4. 53 bytes from the start of the frame (it occupies the 54th byte)
 
-b.
+b. The reason an ARP query is necessary is because the desired MAC address is unknown and must be determined. It therefore must be broadcasted to all other adapters on a subnet in order to get a response. An ARP response is sent to a specific destination MAC address because the ARP query it is responding to was sent with the sender's MAC address, meaning the response knows who it is supposed to respond to.
 
 c. Ethernet and ARP: The Address Resolution Protocol
 12.
