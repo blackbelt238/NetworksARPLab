@@ -9,12 +9,12 @@ b. The reason an ARP query is necessary is because the desired MAC address is un
 c. Ethernet and ARP: The Address Resolution Protocol
   12.
     a. 19 bytes from the beginning (occupies the 20th byte)
-    b. 0001 (1)
+    b. 1
     c. Yes (ar$spa)
     d. In the ar$tha field. Since each byte is zeroed out, we know that there is a question.
   13.
     a. 19 bytes from the beginning (occupies the 20th byte)
-    b. 0002 (2)
+    b. 2
     c. In the ar$sha field.
   14. source: 00:06:25:da:af:73; destination: 00:d0:59:a9:3d:68 (from ethernet-ethereal-trace-1 trace file)
   15. That ARP request (for 192.168.1.117) was not for the machine running Wireshark (1921.168.1.105), meaning an ARP response here would be illogical.
