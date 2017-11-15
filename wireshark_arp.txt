@@ -1,15 +1,22 @@
 a. Ethernet and ARP: Capturing Ethernet Frames
-1. 94:65:9c:ee:c3:43
-2. c8:b3:73:38:d1:a6; No, this is the link-layer address of the network interface of whatever device we are connecting to (likely the gateway router for the gaia.cs.umass.edu network).
-3. 0800; IPv4
-4. 53 bytes from the start of the frame (it occupies the 54th byte)
+  1. 94:65:9c:ee:c3:43
+  2. c8:b3:73:38:d1:a6; No, this is the link-layer address of the network interface of whatever device we are connecting to (likely the gateway router for the gaia.cs.umass.edu network).
+  3. 0800; IPv4
+  4. 53 bytes from the start of the frame (it occupies the 54th byte)
 
 b. The reason an ARP query is necessary is because the desired MAC address is unknown and must be determined. It therefore must be broadcasted to all other adapters on a subnet in order to get a response. An ARP response is sent to a specific destination MAC address because the ARP query it is responding to was sent with the sender's MAC address, meaning the response knows who it is supposed to respond to.
 
 c. Ethernet and ARP: The Address Resolution Protocol
-12.
-13.
-14.
-15.
+  12.
+    a. 19 bytes from the beginning (occupies the 20th byte)
+    b. 0001 (1)
+    c. Yes (ar$spa)
+    d. In the ar$tha field. Since each byte is zeroed out, we know that there is a question.
+  13.
+    a. 19 bytes from the beginning (occupies the 20th byte)
+    b. 0002 (2)
+    c. In the ar$sha field.
+  14. source: 00:06:25:da:af:73; destination: 00:d0:59:a9:3d:68 (from ethernet-ethereal-trace-1 trace file)
+  15. That ARP request (for 192.168.1.117) was not for the machine running Wireshark (1921.168.1.105), meaning an ARP response here would be illogical.
 
 d.
