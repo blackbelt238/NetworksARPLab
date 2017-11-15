@@ -1,0 +1,1 @@
+If your machine attempted to send frames to the Ethernet address associated with that IP address between the time of manual entry and the time the entry expired, it would send frames to the wrong address.
